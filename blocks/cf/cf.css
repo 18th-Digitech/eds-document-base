@@ -1,0 +1,183 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.cf-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cf {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* Cards Container */
+.cards-card-body-title h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cards-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Image as Banner */
+.cards-card-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.cards-card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Text Below Banner */
+.cards-card-body p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Registration Info */
+.cards-card-body-registrationInfo {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cards-card-body-formLink {
+    display: inline-block;
+    background-color: #2196f3;
+    color: #fff !important;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+
+.cards-card-body-formLink:hover {
+    background-color: #1976d2;
+}
+
+/* Campus Tour Section */
+.cards-card-body-campusTour, 
+.cards-card-body-importantInfo, 
+.cards-card-body-contactInfo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-card-body-campusTour p,
+.cards-card-body-importantInfo p,
+.cards-card-body-contactInfo p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cards-card-body-importantInfo ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cards-card-body-importantInfo ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.cards-card-body-contactInfo a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.cards-card-body-contactInfo a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #2196f3;
+    color: white;
+}
+
+td {
+    background-color: #f1f1f1;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .cards-card-body {
+        padding: 10px;
+    }
+
+    .cards-card-body-title h2 {
+        font-size: 2rem;
+    }
+
+    .cards-card-image {
+        margin-bottom: 20px;
+    }
+
+    .cards-card-body p {
+        font-size: 1rem;
+    }
+
+    .cards-card-body-formLink {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .cards-card-body-campusTour p,
+    .cards-card-body-importantInfo p,
+    .cards-card-body-contactInfo p {
+        font-size: 1rem;
+    }
+}
